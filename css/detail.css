@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body {
+    font-family: "Montserrat";
+}
+
+/* Details */
+#details{  
+    padding: 60px;
+    width: 90%;
+    margin:50px auto 5px;
+}
+#details h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.detail{
+    font-family: "Roboto",sans-serif;
+}
+.detail h4{
+    font-size: 20px;
+}
+
+.checked {
+    color: #ff9c1a;
+}
+
+/* Reviews */
+#reviews{
+    margin:3% 4%;
+}
+
+#reviews h3{
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+}
+.show-review{  
+    width: 85%;
+    margin: auto;
+}
+
+.stars{
+    text-align: center;
+    margin: 5px auto;
+}
+.stars i{
+    cursor: pointer;
+    padding: 4px;
+    font-size: 25px;
+    transition: color 0.2s ease;
+    color: #e6e6e6;
+}
+.stars .active{
+    color: #ff9c1a;
+}
+.stars span{
+    display: none;
+}
+
+.show-review .btn{
+    padding:0.5rem 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0.6rem;
+}
+.box{
+    border: 2px solid;
+    font-family: "Roboto",sans-serif;
+}
+.box .d-flex{
+    align-items: center;
+    padding:5px 20px;
+    justify-content:flex-end;
+}
+.list-btn{
+    line-height: 1;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.9rem 1.5rem ;
+    margin: 3px 5px;
+    min-width: 70px;
+    background-color: #1b4543;
+    border: none;
+ }
+.model-content{
+    font-family: "Roboto",sans-serif;
+}
+#message-text{
+    background:transparent;
+    border-radius: 0;
+    border:1px solid #909090;
+    color: #fff;
+}
+.modal-footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.scroll{
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x:scroll;
+    padding: 3%;
+    margin: auto;
+}
+
+.card{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.card-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+}
+.card-header>div{
+    font-family: "Roboto",sans-serif;
+}
+
+.card-header a{
+    margin:1% 2%;
+}
+
+.card-header a img{
+    max-height:80px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.like-button{
+    position: absolute;
+    right: 50px;
+}
+.like-button button{
+    padding: 10px 20px;
+}
+
+.card-text{
+    padding: 3px 15px;
+    text-align: justify;
+}
+.filter-btn{
+    width: 15%;
+    margin: 40px 10px 10px;
+    padding: 3px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 0;
+    color: #fff;
+}
+
+.d-flex .form-control {
+    width: 100%;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 165, 0);
+    border-radius: 10px;
+}

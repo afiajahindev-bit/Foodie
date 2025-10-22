@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap');
+
+body {
+  font-family: "Montserrat";
+}
+
+/*header*/
+#title {
+  color: #000;
+  padding-top: 1rem;
+  background-color: #eafaff;
+
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.container-fluid {
+  background-color: #eafaff;
+  padding: 3% 15%;
+}
+
+.title-image {
+  width: 70%;
+}
+/*content*/
+
+#features {
+  text-align: center;
+  padding: 5% 15% 1%;
+}
+
+#features h2 {
+  font-family: 'Courgette', cursive;
+  font-weight: 700;
+}
+
+#features .row {
+  justify-content: space-between;
+}
+
+.feature-icon {
+  color: #d3d3d3;
+  margin: 1rem;
+}
+
+.feature-icon:hover {
+  color: #48575f;
+}
+
+.feature-font {
+  color: #6a6a6a;
+  text-align: justify;
+  padding: 2px 8px;
+}
+
+.feature-box img {
+  width: 90%;
+  border: #837f7f solid;
+  border-width: 1px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.feature-box h4 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5;
+
+}
+
+/*custom*/
+#custom {
+  text-align: center;
+  margin: 1% 15%;
+
+}
+
+.custom-box {
+  background-color: #ededed;
+  padding: 5%;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.custom-button {
+  margin: 2%;
+  background-color: #48575f;
+  width: 30%;
+}
+
+/*pricing*/
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3%;
+}
+
+.price-feature {
+  margin-bottom: 10%;
+}
+
+
+/*footer*/
+
+#footer {
+  background-color: #eafaff;
+  color: #000;
+  padding: 3% 15% 0 15%;
+  text-align: center;
+
+}
+
+.contact {
+  text-align: left;
+  color: #000;
+}
+
+.footer-anchor {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.footer-anchor:hover {
+  text-decoration: underline;
+}
+
+.info .row .col {
+  margin-bottom: 10px;
+}
+
+.col .fa-2xl {
+  font-size: 4rem;
+}
+
+.info {
+  margin: 2% 10%;
+}
+
+.card {
+  margin: 8px;
+}
+
+.card button {
+  padding: 6px 0 0;
+  width: 100%;
+}
+
+.card .card-body {
+  min-height: 140px;
+  padding: 24px;
+}
+
+.card .card-body .row {
+  align-items: center;
+}

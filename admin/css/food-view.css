@@ -1,0 +1,283 @@
+#content-body {
+  margin: 40px 20px;
+}
+
+#notif {
+  margin: 2% 0 3%;
+  background-color: #39404629;
+}
+.request-select {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1rem;
+}
+.request-select input{
+  border: 0.5px solid #3f3f3f;
+  font-size: 14px;
+  width: 70%;
+  box-shadow: 1px 1px 3px #353535;
+}
+.request-select label{
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+#food-table {
+  height: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+
+table {
+  color: #fff !important;
+  width: 100%;
+}
+
+thead {
+  background-color: #2C3845;
+}
+
+tbody tr:nth-child(even) {
+  outline: 1px solid #fff;
+}
+
+tbody td:nth-child(odd) {
+  background-color: hsla(208, 10%, 25%, 0.839);
+}
+
+tbody td:nth-child(even) {
+  background-color: hsla(208, 10%, 25%, 0.9);
+}
+
+
+th,
+td {
+  padding: 15px 10px;
+  border: 0 0.5px solid #2C3845;
+}
+
+.list-btn {
+  line-height: 1;
+  display: inline-block;
+  font-size: 0.75rem;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  margin: 3px 5px;
+  min-width: 70px;
+  background-color: #4b908f;
+  border: none;
+}
+
+.list-btn:hover {
+  background-color: hsl(179, 32%, 30%);
+}
+
+input[type="file"] {
+  display: none;
+  cursor: pointer;
+}
+
+.upload-img-label {
+  line-height: 1;
+  display: flex;
+  position: relative;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 3px 5px;
+  min-width: 70px;
+  border: 2px solid #ffa500 !important;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18) !important;
+  box-sizing: border-box !important;
+  border-radius: 10px !important;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.upload-img-title {
+  display: flex;
+  background-color: #efefef;
+  width: 30%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-right: 1px solid #ffa500 !important;
+}
+
+.upload-img-box {
+  margin: auto 2%;
+}
+
+.mapFrame {
+  display: none;
+}
+.mapVisible{
+  display: none;
+}
+
+.mapFrame.loc_view {
+  display: block;
+}
+.mapVisible.map_view {
+  display: block;
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 1050;
+  display: none;
+}
+
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.075);
+  object-fit: cover;
+}
+
+.popup-image span {
+  position: absolute;
+  color: #fff;
+  top: 40px;
+  right: 80px;
+  font-size: 45px;
+  cursor: pointer;
+  z-index: inherit;
+}
+
+.image-name:hover {
+  background-color: rgba(57, 64, 70, 0.95);
+  cursor: pointer;
+  text-decoration: underline;
+  color: #4b908f;
+}
+
+@media (max-width:768px) {
+  .popup-image img {
+    width: 95%;
+  }
+}
+
+.input-container {
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+}
+
+.input-container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.input-container .radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  transition: all 300ms ease;
+}
+
+.input-container .icon {
+  color: #fff;
+  font-size: 0.75rem;
+  opacity: 0;
+}
+
+input:hover+.radio-tile {
+  box-shadow: 0 0 6px #fff;
+}
+
+input:checked+.radio-tile {
+  background-color: hsl(192, 94%, 35%);
+  border: 2px solid hsl(192, 94%, 35%);
+  box-shadow: 0 0 3px #fff;
+  transform: scale(1.1);
+}
+
+input:checked+.radio-tile>.icon{
+  opacity: 1;
+}
+
+.accept .form-text{
+  position: relative;
+  font-size: 16px;
+  overflow: hidden;
+}
+.accept input[type="text"]{
+  border: 0;
+  background-color: transparent;
+  border-bottom: 2px solid #ffa500;
+}
+.accept textarea{
+  background-color: transparent;
+  border: 1px solid #ffa500;
+}
+
+.accept .text-icon{
+  position: absolute;
+  left: 90%;
+}
+ 
+datalist{
+  background-color: #efefef;
+}
+  
+/* Style for the modal */
+#mapModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Style for the modal content */
+#mapModalContent {
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Center the modal exactly */
+    padding: 10px;
+    width: 750px;
+    border: 4px solid #0074D9;
+}
+
+/* Style for the close button */
+#closeMap {
+    position: absolute;
+    color: #000;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}

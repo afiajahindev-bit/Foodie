@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
+
+body {
+    font-family: "Montserrat";
+}
+
+/*header*/
+#title {
+    color: #000;
+    padding-top: 1rem;
+
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.title-image {
+    width: 70%;
+}
+
+/*Nav*/
+
+.navbar {
+    padding: 1rem 230px;
+    background-color: #eafaff;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 15px;
+    background-color: #000000;
+
+
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-light";
+    color: aliceblue;
+}
+
+.nav-link:hover {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.drop-a {
+    display: inline;
+    padding-right: 0;
+    font-size: 1.2rem;
+}
+
+
+#details {
+    padding: 60px;
+    width: 90%;
+    margin: 20px auto 5px;
+}
+
+#details h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#update .btn {
+    border: 2px solid;
+    padding: 2% 7%;
+    border-radius: 0;
+    margin: 0 0 1% 60%;
+    cursor: pointer;
+    font-size: 20px;
+}
+#update .btn:hover {
+    border: 2px solid #d76e6e;
+    background-color: #d76e6e;
+    color: #eafaff;
+}
+
+.modal-body .form-control,.add-select {
+    width: 100% !important;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18) !important;
+    box-sizing: border-box !important;
+    border: 2px solid #ffa500 !important;
+    border-radius: 10px !important;
+    background-color: #fff !important;
+}
+
+
+.detail {
+    font-family: "Roboto", sans-serif;
+}
+
+.detail h4 {
+    font-size: 20px;
+}
+
+#reviews {
+    margin: 3% 4%;
+}
+
+#reviews h3 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.show-review {
+    width: 85%;
+    margin: auto;
+}
+
+.stars {
+    text-align: center;
+    margin: 5px auto;
+}
+
+.stars i {
+    cursor: pointer;
+    padding: 4px;
+    font-size: 25px;
+    transition: color 0.2s ease;
+    color: #e6e6e6;
+}
+
+.stars .active {
+    color: #ff9c1a;
+}
+
+.stars span {
+    display: none;
+}
+
+.checked {
+    color: #ff9c1a;
+}
+
+.show-review .btn {
+    padding: 0.5rem 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0.6rem;
+}
+
+.box {
+    border: 2px solid;
+    font-family: "Roboto", sans-serif;
+}
+
+.box .d-flex {
+    align-items: baseline;
+    padding: 5px 20px;
+    justify-content: space-around;
+}
+
+.model-content {
+    font-family: "Roboto", sans-serif;
+}
+
+#message-text {
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid #909090;
+    color: #fff;
+}
+
+.modal-footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.scroll {
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    padding: 3%;
+    margin: auto;
+}
+
+.card {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.card-header>div {
+    font-family: "Roboto", sans-serif;
+}
+
+.card-header a {
+    margin: 1% 2%;
+}
+
+.card-header a img {
+    max-height: 80px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.like-button {
+    position: absolute;
+    right: 50px;
+}
+
+.like-button button {
+    padding: 10px 20px;
+}
+
+.card-text {
+    padding: 3px 15px;
+    text-align: justify;
+}
+
+.filter-btn {
+    width: 15%;
+    margin: 40px 10px 10px;
+    padding: 3px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 0;
+    color: #fff;
+}
+
+/*footer*/
+
+#footer {
+    background-color: #eafaff;
+    color: #000;
+    padding: 3% 15% 0 15%;
+    text-align: center;
+
+}
+
+.contact {
+    text-align: left;
+    color: #000;
+}
+
+.footer-anchor {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.footer-anchor:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(2, 43, 48, 0.702), rgba(0, 0, 0, 0.95)), url("../image/cover1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+#title {
+    color: #fff;
+    text-align: center;
+}
+
+.container-fluid {
+    text-align: center;
+    padding: 0.5% 0;
+}
+
+#title .container-fluid h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+/* Form */
+.center {
+    margin: auto;
+    background: rgba(143, 143, 143, 0.15);
+    border: 2px solid #454545;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.219);
+    margin-bottom: 5px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+
+@media (min-width: 992px) {
+    .center {
+        flex: 0 0 auto;
+        width: 40%;
+    }
+}
+@media (max-width: 991px) {
+    @media (min-width: 576px) {
+        .center {
+            flex: 0 0 auto;
+            width: 58.33333333%;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .center {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+}
+
+.center h2, .center h5 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    padding: 15px 0;
+    background: #0d6b78;
+    color: white;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+/* form */
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form>input {
+    margin: auto;
+}
+.txt_field {
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    margin: 30px 0;
+}
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+}
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #ffffff;
+    transform: translateY(-75%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #ff8a41;
+    transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: #ff8a41;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+/* username */
+#result, #match {
+    border: none;
+    color: rgb(243, 36, 36);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    transition: 0.25s ease-out;
+}
+#result span, #match span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.2rem; height: 1.2rem;
+    color: hsl(120, 69%, 33%);
+    border: 2px solid hsl(120, 69%, 33%);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+/* submit button */
+input[type="submit"]{
+    margin: 2%;
+    width: 65%;
+    height: 35px;
+    border-radius: 0;
+    background: #0d6b78;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover {
+    background: #14455f;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup_link {
+    margin: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.signup_link a {
+    color: #ff8a41;
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+}
+
+.pass {
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
